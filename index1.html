@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/normalize">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar--item header__navbar--item--has--qr header__navbar--item--separate">
+                            Vào cửa hàng trên ứng dụng
+                            <div class="header_qr">
+                                <img src="./assets/img/maQR.png" alt="QR code" class="header__qr-img">
+                                <div class="header_qr-apps">
+                                    <a href="https://play.google.com/store" class="header_qr-link">
+                                        <img src="./assets/img/google_play1.png" alt="Google Play"
+                                            class="header_qr-download-img">
+                                    </a>
+                                    <a href="https://www.apple.com/app-store/" class="header_qr-link">
+                                        <img src="./assets/img/App_Store.png" alt="App_Store"
+                                            class="header_qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar--item">
+                            <span class="header__navbar--title--no--pointer">Kết nối</span>
+                            <a href="" class="header__navbar--icon--link">
+                                <i class="header_navbar--icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar--icon--link">
+                                <i class=" header_navbar--icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar--item header__navbar--item--has--notify">
+                            <a href="" class="haeder__navbar--item--link">
+                                <i class="far fa-bell"></i>
+                                Thông báo</a>
+                            <div class="header_notify">
+                                <header class="header_notify--header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header_notify--list">
+                                    <li class="header_notify--item header_notify--item--viewed">
+                                        <a href="" class="header_notify--link">
+                                            <img src="/assets/img/sanpham.jpg" alt="" class="header_notify--img">
+                                            <div class="header_notify--info">
+                                                <span class="header_notify--name">Mỹ phầm chính hãng</span>
+                                                <span class="header_notify--descriotion">Mô tả mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify--item header_notify--item--viewed">
+                                        <a href="" class="header_notify--link">
+                                            <img src="/assets/img/sanpham.jpg" alt="" class="header_notify--img">
+                                            <div class="header_notify--info">
+                                                <span class="header_notify--name">Mỹ phầm chính hãng</span>
+                                                <span class="header_notify--descriotion">Mô tả mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify--item header_notify--item--viewed">
+                                        <a href="" class="header_notify--link">
+                                            <img src="/assets/img/sanpham.jpg" alt="" class="header_notify--img">
+                                            <div class="header_notify--info">
+                                                <span class="header_notify--name">Mỹ phầm chính hãng</span>
+                                                <span class="header_notify--descriotion">Mô tả mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header_notify--footer">
+                                    <a href="" class="header_notify--footer--btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar--item">
+                            <a href="" class="haeder__navbar--item--link">
+                                <i class=" header_navbar--icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar--item header__navbar--item--bold">
+                            <a href="/Login.html" class="header_navbar--item--login">Đăng nhập</a>
+                        </li>
+                        <!-- <li class="header__navbar--item header__navbar-user">
+                            <img src="/assets/img/sanpham.jpg" alt="" class="header__nabar--user-img">
+                            <span class="header__nabar--user-name">Trung Kiên</span>
+                        </li> -->
+                    </ul>
+                </nav>
+
+                <!-- header with search -->
+                <div class="header__with-search">
+                    <div class="header__logo">
+                        <a href="http://127.0.0.1:5500/index1.html" class="header__logo-link"><img
+                                class="header__logo-img" src="/assets/img/rauqua.png" alt="logo"></a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Cam</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Táo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select--lable">Trong shop</span>
+                            <i class="header__search-select--icon fas fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="hearder__cart-wrap">
+                            <i class=" header__cart-icon fas fa-cart-arrow-down"></i>
+                            <span class="header_cart-wrap-notice">3</span>
+                            <!-- NO cart : header__cart-list--no-cart-->
+                            <div class="header__cart-list">
+                                <img src="/assets/img/empty_cart.png" alt="" class="header__cart-list--no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">Hiện tại không có sản phẩm</span>
+                                <h4 class="header__cart--heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart item-->
+                                    <li class="header__cart-item">
+                                        <img src="/assets/img/carot.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Cà rốt</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">27.000đ/kg</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Loại:1</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="/assets/img/Tao.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Táo</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">27.000đ/kg</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Loại:1</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="/assets/img/ca-chua.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Cà Chua</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">27.000đ/kg</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Loại:1</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="https://www.google.com.vn/?hl=vi"
+                                    class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-stream"></i>
+                                Danh Mục
+                            </h3>
+
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Rau</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Nấm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trái cây</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="backgroud__size-small">
+                                    <img src="/assets/img/anh-rau-cu-qua_112151173.jpg" alt=""
+                                        class="backgroud__size-small-header">
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <div class="home-product-item-buy">
+                                                <a href="#" class="home-product-item-buy-add-cart">
+                                                    <i class="home-product-item-buy-add-cart-icon fas fa-cart-plus"></i>
+                                                </a>
+                                                <a href="" class="home-product-item-buy-cart">
+                                                    <i class="home-product-item-buy-cart-icon fas fa-dollar-sign"></i>
+                                                </a>
+                                            </div>
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like--icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like--icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <a href="#" class="home-product-item__img-click">
+                                                <img src="/assets/img/ca-chua.jpg" alt=""
+                                                    class="home-product-item__img-click-img">
+                                            </a>
+                                        </div>
+                                        <h4 class="home-product-item__name">Cà Chua tươi túi 500g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">30.000đ</span>
+                                            <span class="home-product-item__price-curent">27.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            <span> Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fa fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Raucuqua_Shop</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                    Instsagram</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="footer-item__icon fab fa-linkedin"></i>
+                                    Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Rau</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Rau củ quả đóng hộp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Nấm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Sản phẩm tươi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Củ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Hạt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
